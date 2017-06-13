@@ -32,7 +32,7 @@ function addFee(result){
   if(Number(result["amountAfterCharges"].replace(/\,/g,'')) > 0){
     arr.push(result["amountBeforeCharges"].replace(/\,/g,''))
   }else {
-    arr.push("-"+result["amountBeforeCharges"])
+    arr.push("-"+result["amountBeforeCharges"].replace(/\,/g,''))
   }
   arr.push(result["myRef"])
 
