@@ -22,7 +22,7 @@ if(isAIB){
 
   var data = []
   results[0].data.splice(0, 1); //remove header
-  results[0].data.splice(results[0].data.length -1, 1);//remove end of file
+  results[0].data.splice(results[0].data.length -2, results[0].data.length-1);//remove end of file
   for(result of results[0].data) {
     if(result[3] != ""){
       addAIBFee(result)
